@@ -1,0 +1,45 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="container mt-5">
+
+    <!-- Hero Section -->
+    <div class="jumbotron text-center p-5 bg-light rounded-3">
+        <h1 class="display-4">Welcome to StayEase</h1>
+        <p class="lead">Find and book your perfect stay with ease, whether it's a cozy home or a luxury villa.</p>
+        <hr class="my-4">
+        <div class="d-flex justify-content-center flex-wrap gap-2">
+            <a href="/listings" class="btn btn-primary btn-lg">Browse Listings</a>
+            <% if (!currUser) { %>
+                <a href="/signup" class="btn btn-outline-success btn-lg">Sign Up</a>
+                <a href="/login" class="btn btn-outline-secondary btn-lg">Log In</a>
+            <% } %>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row mt-5 text-center g-4">
+        <div class="col-md-4">
+            <i class="bi bi-house-door-fill display-4 text-primary"></i>
+            <h3 class="mt-3">Variety of Homes</h3>
+            <p>Choose from apartments, villas, and unique stays around the world.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="bi bi-shield-check display-4 text-success"></i>
+            <h3 class="mt-3">Safe & Secure</h3>
+            <p>Verified listings and secure bookings for a worry-free stay.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="bi bi-phone display-4 text-warning"></i>
+            <h3 class="mt-3">Easy Booking</h3>
+            <p>Book your stay in just a few clicks with instant confirmation.</p>
+        </div>
+    </div>
+
+    <!-- Testimonials / Call to Action -->
+    <div class="mt-5 p-5 bg-light rounded-3 text-center">
+        <h2>Join thousands of happy travelers</h2>
+        <p class="lead">Experience hassle-free bookings, trusted hosts, and unforgettable stays. Start your journey today!</p>
+        <a href="/listings" class="btn btn-primary btn-lg mt-3">Explore Stays</a>
+    </div>
+
+</div>
