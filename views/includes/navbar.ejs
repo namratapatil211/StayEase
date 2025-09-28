@@ -1,0 +1,81 @@
+<style>
+  .search-btn {
+    background-color: #fe4164;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+  }
+  .search-btn:hover {
+    background-color: #fe4164;
+    color: #fff;
+  }
+  .search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  .search-input{
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 1rem;
+  }
+  .add-listing-btn {
+    background-color: #fe4164;
+    color: #fff !important;
+    border-radius: 25px;
+    padding: 0.4rem 1rem;
+    transition: 0.3s ease;
+    font-weight: 500;
+    width: 150px; 
+  }
+  .add-listing-btn:hover {
+    background-color: #e63656;
+    color: #fff !important;
+  }
+</style>
+
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top">
+  <div class="container-fluid">
+    
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="/listings">
+      <i class="fa-solid fa-compass me-2"></i> WanderLust
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Items -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      <!-- Left links -->
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listings">Explore</a>
+        <!-- Turned Add Listing into a button-styled link -->
+        <a class="nav-link add-listing-btn ms-2" href="/listings/new"> + Add Listing</a>
+      </div>
+
+      <!-- Center search bar -->
+      <form class="d-flex mx-auto" role="search">
+        <input class="form-control search-input me-2"
+          type="search" placeholder="Search destinations" aria-label="Search">
+        <button class="btn search-btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+      </form>
+
+      <!-- Right side (Auth links) -->
+      <div class="navbar-nav ms-auto">
+        <% if(!currUser) { %>
+          <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+          <a class="nav-link" href="/login"><b>Log In</b></a>
+        <% } %>
+        <% if(currUser) { %>
+          <a class="nav-link text-danger" href="/logout"><b>Logout</b></a>
+        <% } %>
+      </div>
+
+    </div>
+  </div>
+</nav>

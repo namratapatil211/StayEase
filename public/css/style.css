@@ -1,0 +1,385 @@
+body{
+    font-family: "Plus Jakarta sans",sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex:1;
+}
+
+/* NavBar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe4164;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.f-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-socials {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.f-socials i {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.f-socials i:hover {
+  opacity: 0.7;
+}
+
+.f-brand {
+  margin-bottom: 8px;
+}
+
+.f-logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.f-tagline {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.f-links {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.f-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.f-links a:hover {
+  color: #ddd;
+}
+
+.f-copy {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Login page */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Side */
+.login-left {
+  flex: 1;
+}
+
+.login-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Side */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.login-box {
+  width: 350px;
+  text-align: center;
+}
+
+.login-icon {
+  font-size: 3rem;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.login-box h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-box p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  text-align: left;
+  display: block;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn-login:hover {
+  opacity: 0.8;
+}
+
+/* Signup link */
+.signup-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* signup */
+.signup-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Side */
+.signup-left {
+  flex: 0 0 50%; /* Exactly 50% width */
+  height: 100vh;
+}
+
+.signup-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Side */
+.signup-right {
+  flex: 0 0 50%; /* Other half */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.signup-box {
+  width: 350px;
+  text-align: center;
+}
+
+.signup-icon {
+  font-size: 3rem;
+  color: #fe4164;
+  margin-bottom: 10px;
+}
+
+.signup-box h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.signup-box p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  text-align: left;
+  display: block;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.btn-signup {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn-signup:hover {
+  opacity: 0.85;
+}
+
+/* Login link */
+.login-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.login-text a {
+  color: #fe4164;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Cards */
+/* --- Card Styling --- */
+  .listing-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    background: #fff;
+  }
+  .listing-card:hover {
+    transform: scale(1.02);
+  }
+  .listing-card img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+  .listing-card .card-body {
+    padding: 1rem;
+  }
+  .listing-card h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+  }
+  .listing-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  .listing-card .location {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #444;
+  }
+  .listing-card .price {
+    font-weight: bold;
+    font-size: 1rem;
+    color: green;
+    margin-top: 0.3rem;
+  }
+  .view-btn {
+    display: block;
+    text-align: center;
+    margin-top: 0.8rem;
+    padding: 0.5rem;
+    border: 1px solid #fe4164;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color:#fe4164;
+    text-decoration: none;
+  }
+  .view-btn:hover {
+    background: #fe4164;
+    color: #fff;
+  }
+
+
+/*.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+} */
+
+
+
+/* New listing */
+.add-btn {
+    background-color:#fe4164  !important;
+    border: none !important;
+}
+
+/* Enit btn */
+.edit-btn {
+    background-color:#fe4164  !important;
+    border: none !important;
+}
+
+/* show Page */
+.show-img {
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Map */
+#map {
+    height: 400px;
+    width: 80vb;
+}

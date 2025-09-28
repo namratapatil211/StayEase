@@ -1,0 +1,69 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="signup-container">
+  <!-- Left Side Image -->
+  <div class="signup-left">
+    <img src="https://images.alphacoders.com/100/1000255.jpg" alt="Signup Background">
+  </div>
+
+  <!-- Right Side Form -->
+  <div class="signup-right">
+    <div class="signup-box">
+      <div class="signup-icon">
+        <i class="fa fa-user-plus"></i>
+      </div>
+      <h2>Create Account</h2>
+      <p>Sign up to your account</p>
+
+      <form action="/signup" method="POST" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="username" class="form-label">Name</label>
+          <input
+            name="username"
+            id="username"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            name="password"
+            id="password"
+            type="password"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Profile Image</label>
+          <input
+            name="image"
+            id="image"
+            type="file"
+            class="form-control"
+          />
+        </div>
+
+        <button class="btn btn-signup">Sign Up</button>
+      </form>
+
+      <p class="login-text">Already have an account? <a href="/login">Login</a></p>
+    </div>
+  </div>
+</div>
